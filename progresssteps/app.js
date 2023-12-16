@@ -1,7 +1,7 @@
-const progressBar = document.getElementById("progress-bar");
-const progressNext = document.getElementById("progress-next");
-const progressPrev = document.getElementById("progress-prev");
-const steps = document.querySelectorAll(".step");
+const progressBar = document.getElementById("progress");
+const progressNext = document.getElementById("next");
+const progressPrev = document.getElementById("prev");
+const steps = document.querySelectorAll(".circle");
 let active = 1;
 
 progressNext.addEventListener("click", () => {
