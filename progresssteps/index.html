@@ -8,17 +8,18 @@
 </head>
 <body>
     
-    <div id="progress">
-        <div id="progress-bar"></div>
-        <ul id="progress-num">
-          <li class="step active">1</li>
-          <li class="step">2</li>
-          <li class="step">3</li>
-          <li class="step">4</li>
-        </ul>
+    <div class="container">
+        <div class="progress-container">
+          <div class="progress" id="progress"></div>
+          <div class="circle active">1</div>
+          <div class="circle">2</div>
+          <div class="circle">3</div>
+          <div class="circle">4</div>
+        </div>
+  
+        <button class="btn" id="prev" disabled>Prev</button>
+        <button class="btn" id="next">Next</button>
     </div>
-    <button id="progress-prev" class="btn" disabled>Prev</button>
-    <button id="progress-next" class="btn">Next</button>
 
     <script src="app.js"></script>
 </body>
