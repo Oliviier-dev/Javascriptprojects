@@ -21,3 +21,26 @@ progressPrev.addEventListener("click", () => {
     }
     updateProgress();
 });
+
+const updateProgress = () => {
+
+    steps.forEach((step, i) => {
+        if (i < active) {
+            step.classList.add("active");
+        } else {
+            step.classList.remove("active");
+        }
+    });
+
+    progressBar.style.width = ((active - 1) / (steps.length - 1)) * 100 + "%";
+
+    if (active === 1) {
+        progressPrev.disabled = true;
+    } else if (active === steps.length) {
+        progressNext.disabled = true;
+    } else {
+        progressPrev.disabled = false;
+        progressNext.disabled = false;
+    }
+
+}
